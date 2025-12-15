@@ -1,27 +1,50 @@
 const projects = [
   {
     id: 1,
-    title: "Project One",
-    description: "A brief description of Project One.",
-    technologies: ["React", "Tailwind CSS"],
-    link: "https://github.com/yourusername/project-one",
-    liveDemo: "https://yourusername.github.io/project-one",
+    title: "Thrifting.lk – E-commerce for Pre-used Items",
+    description:
+      "A full-stack e-commerce platform for buying and selling pre-owned items, promoting sustainable shopping with a user-friendly experience for both buyers and sellers.",
+    technologies: [
+      "React",
+      "ExpressJS",
+      "MongoDB",
+      "Firebase",
+      "JavaScript",
+    ],
+    link: "https://github.com/shathuparam27/thrifting.lk",
+    liveDemo: "",
   },
   {
     id: 2,
-    title: "Project Two",
-    description: "A brief description of Project Two.",
-    technologies: ["JavaScript", "HTML", "CSS"],
-    link: "https://github.com/yourusername/project-two",
-    liveDemo: "https://yourusername.github.io/project-two",
+    title: "Automation in Candle Maker",
+    description:
+      "A hardware-based automation system designed to streamline candle production, improve output quality, and support manufacturing candles in various shapes and sizes.",
+    technologies: ["C", "Arduino", "Blender"],
+    link: "",
+    liveDemo: "",
   },
   {
     id: 3,
-    title: "Project Three",
-    description: "A brief description of Project Three.",
-    technologies: ["Node.js", "Express", "MongoDB"],
-    link: "https://github.com/yourusername/project-three",
-    liveDemo: "https://yourusername.github.io/project-three",
+    title: "Task Master – Task Management App",
+    description:
+      "A basic task management web application that allows users to create tasks, mark them as completed, and track unfinished work efficiently.",
+    technologies: ["React", "ExpressJS", "MongoDB"],
+    link: "https://github.com/shathuparam27/task-master",
+    liveDemo: "",
+  },
+  {
+    id: 4,
+    title: "Expense Tracker",
+    description:
+      "A secure expense tracking web application with authentication, transaction logging, real-time analytics, and visual reports to help users manage their spending effectively.",
+    technologies: [
+      "Next.js",
+      "Clerk",
+      "Tailwind CSS",
+      "Drizzle ORM",
+    ],
+    link: "https://github.com/shathuparam27/expense-tracker",
+    liveDemo: "",
   },
 ];
 
