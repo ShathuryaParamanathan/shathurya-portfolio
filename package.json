@@ -1,0 +1,25 @@
+{
+  "name": "shathurya-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Shathurya Paramanathan, an IT undergraduate at the University of Moratuwa.",
+  "main": "src/main.jsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "autoprefixer": "^10.0.0",
+    "postcss": "^8.0.0",
+    "vite": "^4.2.0"
+  },
+  "keywords": [],
+  "author": "Shathurya Paramanathan",
+  "license": "MIT"
+}
