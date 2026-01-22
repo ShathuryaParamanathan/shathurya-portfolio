@@ -19,9 +19,9 @@ export default function App() {
         <Hero />
         <AboutSection />
         <EducationSection />
+        <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />
-        <ExperienceSection />
         <CertificationsSection />
         <ContactSection />
         <ReferencesSection />

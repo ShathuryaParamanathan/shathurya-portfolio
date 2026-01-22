@@ -1,5 +1,7 @@
 export const profile = {
   name: "Shathurya Paramanathan",
+  image: "/profileTag.jpg",
+  location: "Jaffna, Sri Lanka",
   role: "Software Engineer / IT Student",
   intro:
     "Dedicated IT student and aspiring software engineer with a passion for building impactful web and hardware solutions.",

@@ -159,11 +159,11 @@ export default function Hero() {
           <div className="lg:col-span-7 order-2 lg:order-1">
             <div data-hero-reveal className="chip w-fit">
               <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
-              <span className="uppercase tracking-[0.18em] text-white/80">Available for internship</span>
+              <span className="uppercase tracking-[0.18em] text-white/80">Hey ! </span>
             </div>
 
             <h1 data-hero-reveal className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
-              <span className="block text-white">Hi, I’m</span>
+              <span className="block text-white">I’m</span>
               <span className="block text-brand-500">{profile.name}</span>
             </h1>
 
@@ -178,6 +178,12 @@ export default function Hero() {
                 <>
                   <span className="mx-2">|</span>
                   <a href={`tel:${profile.phone.replace(/\s/g, '')}`} className="hover:text-brand-500 transition-colors">{profile.phone}</a>
+                </>
+              )}
+              {profile.location && (
+                <>
+                  <span className="mx-2">|</span>
+                  <a className="hover:text-brand-500 transition-colors cursor-default">{profile.location}</a>
                 </>
               )}
             </div>

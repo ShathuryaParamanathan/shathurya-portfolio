@@ -8,11 +8,11 @@ const nav = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#education", label: "Education" },
+  { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Portfolio" },
   { href: "#skills", label: "Skills" },
-  { href: "#experience", label: "Experience" },
   { href: "#certifications", label: "Certifications" },
-  { href: "#contact", label: "Contact" },
+  // { href: "#contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -37,13 +37,13 @@ export default function Header() {
   return (
     <header ref={rootRef} className="sticky top-0 z-50 border-b border-white/10 bg-ink-950/70 backdrop-blur">
       <div className="mx-auto max-w-6xl container-px py-4 flex items-center justify-between gap-4">
-        <a href="#home" className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-2xl bg-brand-500/15 border border-brand-500/25 grid place-items-center">
-            <div className="h-2 w-2 rounded-full bg-brand-500" />
+        <a href="#home" className="flex items-center gap-3">  
+          <div className="h-10 w-10 rounded-full bg-brand-500/15 border border-brand-500/25 grid place-items-center">
+          <img src={profile.image} alt="Shathurya Paramanathan" className="w-10 h-10 rounded-full" />
           </div>
           <div className="leading-tight">
             <div className="font-extrabold">{profile.name}</div>
-            <div className="text-xs text-white/60">Software Engineering Intern</div>
+            <div className="text-xs text-white/60">Software Engineering</div>
           </div>
         </a>
 
