@@ -1,50 +1,82 @@
 const projects = [
   {
-    id: 1,
-    title: "Thrifting.lk – E-commerce for Pre-used Items",
+    id: "thrifting",
+    title: "thrifting.lk – pre-used items e-commerce platform",
+    stack: ["React", "Express.js", "MongoDB", "Firebase"],
     description:
-      "A full-stack e-commerce platform for buying and selling pre-owned items, promoting sustainable shopping with a user-friendly experience for both buyers and sellers.",
-    technologies: [
-      "React",
-      "ExpressJS",
-      "MongoDB",
-      "Firebase",
-      "JavaScript",
+      "An e-commerce platform for buying and selling pre-owned items, designed to promote sustainable shopping with a smooth user experience for both buyers and sellers.",
+    contributions: [
+      "Developed backend APIs using Express.js for seller onboarding and management",
+      "Implemented seller registration and about pages to build trust",
+      "Built a seller dashboard for product management, buyer tracking, and profile updates",
+      "Implemented category-based product showcasing",
     ],
-    link: "https://github.com/shathuparam27/thrifting.lk",
-    liveDemo: "",
+    links: {
+      github: "https://github.com/Vanaiyan/Thrifting.lk",
+      demo: "",
+    },
   },
   {
-    id: 2,
-    title: "Automation in Candle Maker",
+    id: "expense",
+    title: "expense tracker (ongoing)",
+    stack: ["Next.js", "React", "Tailwind CSS", "Drizzle ORM"],
     description:
-      "A hardware-based automation system designed to streamline candle production, improve output quality, and support manufacturing candles in various shapes and sizes.",
-    technologies: ["C", "Arduino", "Blender"],
-    link: "",
-    liveDemo: "",
-  },
-  {
-    id: 3,
-    title: "Task Master – Task Management App",
-    description:
-      "A basic task management web application that allows users to create tasks, mark them as completed, and track unfinished work efficiently.",
-    technologies: ["React", "ExpressJS", "MongoDB"],
-    link: "https://github.com/shathuparam27/task-master",
-    liveDemo: "",
-  },
-  {
-    id: 4,
-    title: "Expense Tracker",
-    description:
-      "A secure expense tracking web application with authentication, transaction logging, real-time analytics, and visual reports to help users manage their spending effectively.",
-    technologies: [
-      "Next.js",
-      "Clerk",
-      "Tailwind CSS",
-      "Drizzle ORM",
+      "A web application for tracking and managing personal expenses with secure authentication, transaction logging, and visual analytics.",
+    contributions: [
+      "Secure user authentication",
+      "Expense categorization",
+      "Real-time analytics with charts",
+      "Personalized financial insights",
     ],
-    link: "https://github.com/shathuparam27/expense-tracker",
-    liveDemo: "",
+    links: {
+      github: "https://github.com/ShathuryaParamanathan/expense_tracker_app",
+      demo: "",
+    },
+  },
+  {
+    id: "taskmaster",
+    title: "task master – task management app",
+    stack: ["React", "Express.js", "MongoDB"],
+    description:
+      "A simple task management application that helps users organize tasks and track progress.",
+    contributions: ["Create and manage tasks", "Mark tasks as completed", "Track pending work"],
+    links: {
+      github: "https://github.com/ShathuryaParamanathan/CodeAlpha_ToDoList",
+      demo: "",
+    },
+  },
+  {
+    id: "movie",
+    title: "movie review app",
+    stack: ["React", "Express.js", "MongoDB"],
+    description:
+      "A movie review platform where users can rate and review films with search and filtering options.",
+    contributions: [
+      "User authentication",
+      "Rating and review system",
+      "Search and filter movies",
+      "Responsive UI",
+    ],
+    links: {
+      github: "https://github.com/ShathuryaParamanathan/Movie-Review",
+      demo: "",
+    },
+  },
+  {
+    id: "candle",
+    title: "automation in candle maker (hardware project)",
+    stack: ["C", "Arduino", "Blender"],
+    description:
+      "An automated candle-making system designed to improve production efficiency and maintain quality.",
+    contributions: [
+      "Wrote Arduino firmware in C",
+      "Designed and simulated mechanical components using Blender",
+      "Tested and debugged the system",
+    ],
+    links: {
+      github: "",
+      demo: "",
+    },
   },
 ];
 

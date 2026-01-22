@@ -1,22 +1,30 @@
-import React from 'react';
-import Header from './components/Header';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import React from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import AboutSection from "./components/AboutSection";
+import EducationSection from "./components/EducationSection";
+import ProjectsSection from "./components/ProjectsSection";
+import SkillsSection from "./components/SkillsSection";
+import ExperienceSection from "./components/ExperienceSection";
+import CertificationsSection from "./components/CertificationsSection";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
-const App = () => {
+export default function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="min-h-screen bg-ink-950">
       <Header />
-      <main className="flex-grow">
-        <About />
-        <Projects />
-        <Contact />
+      <main>
+        <Hero />
+        <AboutSection />
+        <EducationSection />
+        <ProjectsSection />
+        <SkillsSection />
+        <ExperienceSection />
+        <CertificationsSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>
   );
-};
-
-export default App;
+}

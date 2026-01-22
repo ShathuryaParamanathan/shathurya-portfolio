@@ -1,39 +1,37 @@
 import React from "react";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { profile } from "../data/profile";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-6">
-      <div className="container mx-auto text-center">
-        <p className="mb-2">
-          &copy; {new Date().getFullYear()} Shathurya Paramanathan. All rights reserved.
-        </p>
-        <div className="flex justify-center space-x-6">
-          <a
-            href="https://github.com/ShathuryaParamanathan"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-400"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/shathurya-paramanathan-5a3048243"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-400"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="mailto:shathuparam27@gmail.com"
-            className="hover:text-blue-400"
-          >
-            Email
+    <footer className="border-t border-white/10 bg-ink-950">
+      <div className="mx-auto max-w-6xl container-px py-10">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <div className="font-extrabold">{profile.name}</div>
+            <div className="muted text-sm">Dark + orange portfolio built with React, Tailwind, and GSAP.</div>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <a className="btn-ghost" href={profile.links.github} target="_blank" rel="noreferrer">
+              <FiGithub /> GitHub
+            </a>
+            <a className="btn-ghost" href={profile.links.linkedin} target="_blank" rel="noreferrer">
+              <FiLinkedin /> LinkedIn
+            </a>
+            <a className="btn-ghost" href={profile.links.email}>
+              <FiMail /> Email
+            </a>
+          </div>
+        </div>
+        <div className="mt-8 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div className="muted text-xs">
+            © {new Date().getFullYear()} {profile.name}. All rights reserved.
+          </div>
+          <a className="muted text-xs hover:text-white transition" href="#home">
+            Back to top
           </a>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
