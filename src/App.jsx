@@ -8,6 +8,7 @@ import SkillsSection from "./components/SkillsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import CertificationsSection from "./components/CertificationsSection";
 import ContactSection from "./components/ContactSection";
+import ReferencesSection from "./components/ReferencesSection";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
         <ExperienceSection />
         <CertificationsSection />
         <ContactSection />
+        <ReferencesSection />
       </main>
       <Footer />
     </div>

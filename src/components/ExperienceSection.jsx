@@ -17,9 +17,36 @@ export default function ExperienceSection() {
       <div className="mx-auto max-w-6xl container-px">
         <div data-reveal>
           <SectionHeading
-            eyebrow="Experience & leadership"
-            title="Owning responsibility and driving outcomes."
-            desc="Leadership roles and community work that strengthened collaboration, communication, and execution."
+            eyebrow="Work experience"
+            title="Building real-world solutions."
+            desc="Professional experience delivering quality solutions across multiple domains."
+          />
+        </div>
+
+        <div className="mt-10 grid gap-4 md:grid-cols-2">
+          {profile.workExperience?.map((x) => (
+            <div key={`${x.title}-${x.period}`} data-reveal className="card p-6">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <div className="font-semibold">{x.title}</div>
+                  <div className="mt-1 muted text-sm">{x.org}</div>
+                </div>
+                <div className="chip whitespace-nowrap border-brand-500/25 bg-brand-500/10 text-brand-200">
+                  {x.period}
+                </div>
+              </div>
+              <p className="mt-3 muted text-sm leading-relaxed">
+                {x.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div data-reveal className="mt-16">
+          <SectionHeading
+            eyebrow="Extracurricular activities"
+            title="Leadership and community involvement."
+            desc="Roles that strengthened collaboration, communication, and execution."
           />
         </div>
 
@@ -32,9 +59,6 @@ export default function ExperienceSection() {
                   {x.period}
                 </div>
               </div>
-              <p className="mt-3 muted text-sm leading-relaxed">
-                Focused on teamwork, ownership, and reliable execution — delivering results with clear communication.
-              </p>
             </div>
           ))}
         </div>

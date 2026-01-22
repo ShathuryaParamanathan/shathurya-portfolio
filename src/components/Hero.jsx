@@ -172,6 +172,16 @@ export default function Hero() {
               <span className="block mt-2">{profile.intro}</span>
             </p>
 
+            <div data-hero-reveal className="mt-4 text-sm text-white/60">
+              <a href={profile.links.email} className="hover:text-brand-500 transition-colors">{profile.links.email.replace('mailto:', '')}</a>
+              {profile.phone && (
+                <>
+                  <span className="mx-2">|</span>
+                  <a href={`tel:${profile.phone.replace(/\s/g, '')}`} className="hover:text-brand-500 transition-colors">{profile.phone}</a>
+                </>
+              )}
+            </div>
+
             <div data-hero-reveal className="mt-7 flex flex-wrap gap-3">
               <a className="btn-primary" href="#projects">
                 View work <FiArrowUpRight />

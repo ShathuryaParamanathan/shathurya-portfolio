@@ -59,16 +59,18 @@ export default function SkillsSection() {
         </div>
 
         <div className="mt-4 grid gap-4 md:grid-cols-2">
-          <div data-reveal className="card p-6">
-            <div className="text-base font-bold">Soft skills</div>
-            <ul className="mt-4 space-y-2">
-              {skills.soft.map((s) => (
-                <li key={s} className="muted">
-                  <span className="text-brand-500">•</span> {s}
-                </li>
-              ))}
-            </ul>
-          </div>
+          {skills.languages && skills.languages.length > 0 && (
+            <div data-reveal className="card p-6">
+              <div className="text-base font-bold">Languages</div>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {skills.languages.map((lang) => (
+                  <span key={lang} className="chip">
+                    {lang}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
           <div data-reveal className="card p-6">
             <div className="text-base font-bold">Interests</div>
             <ul className="mt-4 space-y-2">

@@ -1,28 +1,37 @@
 export const profile = {
   name: "Shathurya Paramanathan",
-  role: "Software Engineering Intern | 4th year Undergraduate IT Student",
+  role: "Software Engineer / IT Student",
   intro:
-    "I am a dedicated and highly motivated IT undergraduate with a strong interest in software engineering and full-stack development. I enjoy building practical applications, learning new technologies, and contributing to meaningful, real-world projects.",
+    "Dedicated IT student and aspiring software engineer with a passion for building impactful web and hardware solutions.",
+  phone: "+94 769481183",
   links: {
     github: "https://github.com/ShathuryaParamanathan",
     linkedin: "http://www.linkedin.com/in/shathurya-paramanathan-5a3048243",
     email: "mailto:shathuparam27@gmail.com",
   },
   about:
-    "I am an undergraduate student at the University of Moratuwa, Faculty of Information Technology. I have a solid foundation in programming, web development, and database systems, and I enjoy solving problems through clean and efficient code. I am continuously learning and exploring new tools and technologies, with the goal of growing into a skilled software engineer who contributes to impactful products.",
-  interests: ["Photography", "Reading", "Playing chess"],
+    "Dedicated and highly motivated IT student with strong technical and problem-solving skills. Experienced in programming, web development, database management, and systems administration. Committed to continuous learning and contributing to innovative projects.",
+  interests: ["Photography", "Reading", "Chess"],
   education: [
     {
       title: "B.Sc. (Hons) in Information Technology",
-      org: "University of Moratuwa, Sri Lanka",
+      org: "University of Moratuwa, Colombo, Sri Lanka",
       period: "2022 – Present",
-      highlights: ["L2 S1 SGPA: 3.71"],
+      highlights: ["L2S1 SGPA: 3.71", "L2S2 SGPA: 3.83 (Dean's List)"],
     },
     {
-      title: "G.C.E. Advanced Level – Physical Science Stream",
-      org: "Nelliady Central College, Jaffna",
+      title: "G.C.E A/L: Physical Science Stream",
+      org: "Nelliady Central College, Jaffna, Sri Lanka",
       period: "2020",
-      highlights: ["Results: 2A, 1B", "Z-score: 1.7680"],
+      highlights: ["Z-Score: 1.7680"],
+    },
+  ],
+  workExperience: [
+    {
+      title: "COGNTIX",
+      org: "Nallur, Jaffna, Sri Lanka",
+      period: "Feb 2025 to July 2025",
+      description: "Worked on projects across Telecom, MediTech, and HR Tech domains. Delivered high-quality solutions within deadlines. Demonstrated proactive problem-solving and strong technical contributions.",
     },
   ],
   skills: {
@@ -30,29 +39,41 @@ export const profile = {
     web: [
       "React",
       "Next.js",
-      "Express.js",
       "HTML",
       "CSS",
       "JavaScript",
-      "Material UI",
+      "ExpressJS",
+      "Material-UI",
       "Tailwind CSS",
-      "PHP",
     ],
     dataCloud: ["MongoDB", "MySQL", "AWS (Beginner)"],
-    tools: ["Git", "GitHub", "VS Code", "Postman"],
-    soft: ["Leadership & teamwork", "Communication", "Problem solving"],
+    tools: ["Git", "VS Code", "Postman"],
+    languages: ["English", "Tamil"],
   },
   leadership: [
-    { title: "Third year batch representative", period: "2024–2025" },
+    { title: "Third Year Batch Representative", period: "2024/2025" },
     {
-      title: "Company coordinator – CodeGen (FIT Future Career Event, INTECS)",
+      title: "Company Coordinator – CodeGen, FIT FUTURE CAREER Event",
       period: "2024",
     },
-    { title: "MoraSpirit crew member (News Operation Pillar)", period: "2022–2024" },
-    { title: "AIESEC Colombo South – OGV member", period: "2023–2024" },
-    { title: "AIESEC Colombo South – Marketing & PR (Shutter Squad)", period: "2023–2024" },
-    { title: "School prefect – Nelliady Central College", period: "2018–2020" },
+    { title: "MoraSpirit – Crew Member, News Operation", period: "2022–2024" },
+    { title: "AIESEC Colombo South – oGV Member & Marketing/PR", period: "2023/2024" },
+    { title: "Prefect – Nelliady Central College", period: "2018–2020" },
   ],
-  certifications: ["React Basics – Meta (Coursera)", "Code Rush 2023 – INTECS UoM", "Idealize’24", "HackMoral 6.0"],
+  certifications: ["React Basics – Meta (Coursera)", "Code Rush 2023 – INTECS UoM", "Idealize'24", "HackMoral 6.0"],
+  references: [
+    {
+      name: "Ms. M.N. Chandimali",
+      title: "Lecturer, Faculty of IT, University of Moratuwa",
+      email: "nipunic@uom.lk",
+      phone: "+94 71 079 2617",
+    },
+    {
+      name: "Krishna Thangavel",
+      title: "CEO, KNi2 Innovators Pvt Ltd",
+      email: "Pontkk99@gmail.com",
+      phone: "+94 772736000",
+    },
+  ],
 };
 
