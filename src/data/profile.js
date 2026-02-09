@@ -63,19 +63,6 @@ export const profile = {
     { title: "Prefect – Nelliady Central College", period: "2018–2020" },
   ],
   certifications: ["React Basics – Meta (Coursera)", "Code Rush 2023 – INTECS UoM", "Idealize'24", "HackMoral 6.0"],
-  references: [
-    {
-      name: "Ms. M.N. Chandimali",
-      title: "Lecturer, Faculty of IT, University of Moratuwa",
-      email: "nipunic@uom.lk",
-      phone: "+94 71 079 2617",
-    },
-    {
-      name: "Krishna Thangavel",
-      title: "CEO, KNi2 Innovators Pvt Ltd",
-      email: "Pontkk99@gmail.com",
-      phone: "+94 772736000",
-    },
-  ],
+
 };
 
