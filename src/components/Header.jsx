@@ -9,10 +9,10 @@ const nav = [
   { href: "#about", label: "About" },
   { href: "#education", label: "Education" },
   { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Portfolio" },
+  { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
   { href: "#certifications", label: "Certifications" },
-  // { href: "#contact", label: "Contact" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -27,7 +27,13 @@ export default function Header() {
       gsap.fromTo(
         "[data-nav-item]",
         { autoAlpha: 0, y: -10 },
-        { autoAlpha: 1, y: 0, duration: 0.6, ease: "power3.out", stagger: 0.05 }
+        {
+          autoAlpha: 1,
+          y: 0,
+          duration: 0.6,
+          ease: "power3.out",
+          stagger: 0.05,
+        },
       );
     }, rootRef);
 
@@ -35,15 +41,18 @@ export default function Header() {
   }, []);
 
   return (
-    <header ref={rootRef} className="sticky top-0 z-50 border-b border-white/10 bg-ink-950/70 backdrop-blur">
+    <header
+      ref={rootRef}
+      className="sticky top-0 z-50 border-b border-white/10 bg-ink-950/70 backdrop-blur"
+    >
       <div className="mx-auto max-w-6xl container-px py-4 flex items-center justify-between gap-4">
-        <a href="#home" className="flex items-center gap-3">  
-          <div className="h-10 w-10 rounded-full bg-brand-500/15 border border-brand-500/25 grid place-items-center">
+        <a href="#home" className="flex items-center gap-3">
+          {/* <div className="h-10 w-10 rounded-full bg-brand-500/15 border border-brand-500/25 grid place-items-center">
           <img src={profile.image} alt="Shathurya Paramanathan" className="w-10 h-10 rounded-full" />
-          </div>
+          </div> */}
           <div className="leading-tight">
             <div className="font-extrabold">{profile.name}</div>
-            <div className="text-xs text-white/60">Software Engineering</div>
+            {/* <div className="text-xs text-white/60">Software Engineering</div> */}
           </div>
         </a>
 
@@ -63,8 +72,14 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a className="btn-primary hidden sm:inline-flex" href="#contact">
-            Contact
+          <a
+            className="btn-primary hidden sm:inline-flex"
+            href="/Shathurya_Parmanathan_SE_CV.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download CV
           </a>
           <button
             type="button"

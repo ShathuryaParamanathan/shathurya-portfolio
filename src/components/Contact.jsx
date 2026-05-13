@@ -2,64 +2,68 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Contact Me</h2>
-        <form className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
-          <div className="mb-4">
-            <label
-              htmlFor="name"
-              className="block text-gray-700 font-medium mb-2"
-            >
+    <section id="contact" className="py-20 bg-ink-950">
+      <div className="mx-auto max-w-4xl px-4">
+
+        {/* Heading */}
+        <h2 className="text-3xl font-bold text-center text-white">
+          Contact Me
+        </h2>
+
+        <p className="text-center text-white/50 mt-2">
+          Let’s build something meaningful together
+        </p>
+
+        {/* Form */}
+        <form className="mt-10 card p-6 space-y-5">
+
+          {/* Name */}
+          <div>
+            <label className="block text-sm text-white/70 mb-2">
               Name
             </label>
             <input
               type="text"
-              id="name"
               placeholder="Your Name"
-              className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full p-3 rounded-lg bg-ink-800 border border-white/10 text-white focus:outline-none focus:border-brand-500 transition"
               required
             />
           </div>
 
-          <div className="mb-4">
-            <label
-              htmlFor="email"
-              className="block text-gray-700 font-medium mb-2"
-            >
+          {/* Email */}
+          <div>
+            <label className="block text-sm text-white/70 mb-2">
               Email
             </label>
             <input
               type="email"
-              id="email"
               placeholder="Your Email"
-              className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full p-3 rounded-lg bg-ink-800 border border-white/10 text-white focus:outline-none focus:border-brand-500 transition"
               required
             />
           </div>
 
-          <div className="mb-4">
-            <label
-              htmlFor="message"
-              className="block text-gray-700 font-medium mb-2"
-            >
+          {/* Message */}
+          <div>
+            <label className="block text-sm text-white/70 mb-2">
               Message
             </label>
             <textarea
-              id="message"
-              placeholder="Your Message"
-              className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
               rows="5"
+              placeholder="Your Message"
+              className="w-full p-3 rounded-lg bg-ink-800 border border-white/10 text-white focus:outline-none focus:border-brand-500 transition"
               required
-            ></textarea>
+            />
           </div>
 
+          {/* Button */}
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white font-semibold p-3 rounded-md hover:bg-blue-600 transition-colors"
+            className="w-full bg-brand-500 hover:bg-brand-600 text-white font-semibold p-3 rounded-lg transition shadow-glow"
           >
             Send Message
           </button>
+
         </form>
       </div>
     </section>

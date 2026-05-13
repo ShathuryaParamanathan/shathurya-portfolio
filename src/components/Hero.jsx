@@ -6,7 +6,7 @@ import { profile } from "../data/profile";
 
 function getProfileSrc() {
   // User said they'll add PNG; keep jpg fallback for current repo state.
-  return "/profile.png";
+  return "/official.png";
 }
 
 export default function Hero() {
@@ -138,7 +138,7 @@ export default function Hero() {
                   <div className="absolute inset-0 bg-gradient-to-t from-ink-950/70 via-ink-950/10 to-transparent" />
                 </div>
 
-                <div className="mt-5 grid grid-cols-2 gap-3">
+                {/* <div className="mt-5 grid grid-cols-2 gap-3">
                   <div className="rounded-xl border border-white/10 bg-white/5 p-4">
                     <div className="text-sm font-semibold">Focus</div>
                     <div className="muted text-sm">Full-stack + clean UI</div>
@@ -147,7 +147,7 @@ export default function Hero() {
                     <div className="text-sm font-semibold">Currently</div>
                     <div className="muted text-sm">Learning & shipping</div>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div data-hero-float className="pointer-events-none absolute -right-3 top-10 hidden h-20 w-20 rounded-2xl border border-white/10 bg-brand-500/10 sm:block" />
@@ -198,9 +198,9 @@ export default function Hero() {
               <a className="btn-ghost" href={profile.links.linkedin} target="_blank" rel="noreferrer">
                 <FiLinkedin /> LinkedIn
               </a>
-              <a className="btn-ghost" href={profile.links.email}>
+              {/* <a className="btn-ghost" href={profile.links.email}>
                 <FiMail /> Email
-              </a>
+              </a> */}
             </div>
 
             <div data-hero-reveal className="mt-10 grid grid-cols-3 gap-3 max-w-xl">

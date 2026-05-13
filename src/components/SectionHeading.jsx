@@ -14,7 +14,7 @@ export default function SectionHeading({ eyebrow, title, desc, align = "left" })
       <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
         <span className="text-white">{title}</span>
       </h2>
-      {desc ? <p className="muted max-w-3xl leading-relaxed">{desc}</p> : null}
+      {desc ? <p className="muted max-w-4xl leading-relaxed">{desc}</p> : null}
     </div>
   );
 }

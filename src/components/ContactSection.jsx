@@ -109,13 +109,7 @@ export default function ContactSection() {
                 <button type="submit" className="btn-primary">
                   <FiSend /> Send
                 </button>
-                <a className="btn-ghost" href="#home">
-                  <FiMail /> Back to top
-                </a>
               </div>
-              <p className="muted text-xs">
-                This form opens your email app (no backend) — fast, simple, and privacy-friendly.
-              </p>
             </form>
           </div>
         </div>
