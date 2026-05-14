@@ -51,7 +51,7 @@ export default function SkillsSection() {
         <div data-reveal>
           <SectionHeading
             eyebrow="Skills"
-            title="Tools I use to ship reliable work."
+            title="Tools I Use to Ship Reliable Work."
             desc="A practical stack focused on building, debugging, and delivering real-world solutions."
           />
         </div>

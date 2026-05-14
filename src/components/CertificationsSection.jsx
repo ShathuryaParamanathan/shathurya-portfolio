@@ -25,7 +25,7 @@ export default function CertificationsSection() {
           <SectionHeading
             eyebrow="Certifications"
             title="Achievements & Learning Milestones"
-            desc="A collection of certifications that reflect continuous learning and technical growth."
+            desc="A Collection of Certifications That Reflect Continuous Learning and Technical Growth."
           />
         </div>
 

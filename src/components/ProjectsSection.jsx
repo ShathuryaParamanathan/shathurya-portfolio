@@ -95,7 +95,7 @@ export default function ProjectsSection() {
         <div data-reveal>
           <SectionHeading
             eyebrow="Projects"
-            title="Ideas turned into working systems"
+            title="Ideas Turned Into Working Systems"
             desc="A collection of work where concepts are explored, built, and refined into functional applications with attention to usability and performance."
           />
         </div>

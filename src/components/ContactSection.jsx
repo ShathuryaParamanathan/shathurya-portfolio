@@ -26,7 +26,7 @@ export default function ContactSection() {
         <div data-reveal>
           <SectionHeading
             eyebrow="Contact"
-            title="Let’s build something reliable and useful."
+            title="Let’s Build Something Reliable and Useful."
             desc="If you have an opportunity or project, I’d love to connect."
           />
         </div>

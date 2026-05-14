@@ -11,7 +11,7 @@ const Contact = () => {
         </h2>
 
         <p className="text-center text-white/50 mt-2">
-          Let’s build something meaningful together
+          Let’s Build Something Meaningful Together
         </p>
 
         {/* Form */}

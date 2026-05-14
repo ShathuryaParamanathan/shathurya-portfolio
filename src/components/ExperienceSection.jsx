@@ -66,8 +66,8 @@ export default function ExperienceSection() {
 
         <div data-reveal className="mt-16">
           <SectionHeading
-            eyebrow="Beyond the Code"
-            title="Leadership and community involvement"
+            eyebrow="Extra-curricular Activities"
+            title="Leadership and Community Involvement"
             desc="Moments that shaped how I collaborate, communicate, and contribute to team-driven goals."
           />
         </div>
