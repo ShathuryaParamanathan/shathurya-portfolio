@@ -13,7 +13,7 @@ function ProjectCard({ project }) {
           <img
             src={project.image}
             alt={project.title}
-            className="h-50 w-full object-cover hover:scale-[1.03] transition-transform duration-300"
+            className="h-60 w-full object-cover hover:scale-[1.03] transition-transform duration-300"
           />
         </div>
       )}

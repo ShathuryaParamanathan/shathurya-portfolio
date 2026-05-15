@@ -17,40 +17,6 @@ const projects = [
     },
   },
 
-  {
-    id: "candle",
-    title: "Automation in Candle Maker – Hardware System",
-    image: "/projects/candle.png",
-    stack: ["C", "Arduino", "Blender"],
-    description:
-      "An automated candle-making system designed to improve production efficiency and maintain consistent quality using embedded control and mechanical design.",
-    contributions: [
-      "Developed Arduino firmware for controlled automation",
-      "Designed mechanical components using Blender",
-      "Improved production efficiency and output consistency",
-    ],
-    links: {
-      github: "",
-      demo: "",
-    },
-  },
-
-  {
-    id: "taskmaster",
-    title: "Task Master – Task Management Application",
-    image: "/projects/taskmaster.jpeg",
-    stack: ["ExpressJS", "React", "MongoDB"],
-    description:
-      "A task management application that allows users to create, organize, and track tasks efficiently with a simple and responsive interface.",
-    contributions: [
-      "Implemented task CRUD operations with backend APIs",
-      "Built responsive UI for task tracking and management",
-    ],
-    links: {
-      github: "https://github.com/ShathuryaParamanathan/CodeAlpha_ToDoList",
-      demo: "",
-    },
-  },
 
   {
     id: "expense",
@@ -114,6 +80,41 @@ const projects = [
       demo: "https://angampora.netlify.app/",
     },
   },
+
+   {
+    id: "candle",
+    title: "Automation in Candle Maker – Hardware System",
+    image: "/projects/candlemaker.png",
+    stack: ["C", "Arduino", "Blender"],
+    description:
+      "An automated candle-making system designed to improve production efficiency and maintain consistent quality using embedded control and mechanical design.",
+    contributions: [
+      "Developed Arduino firmware for controlled automation",
+      "Designed mechanical components using Blender",
+      "Improved production efficiency and output consistency",
+    ],
+    links: {
+      github: "",
+      demo: "",
+    },
+  },
+  //   {
+  //   id: "taskmaster",
+  //   title: "Task Master – Task Management Application",
+  //   image: "/projects/taskmaster.jpeg",
+  //   stack: ["ExpressJS", "React", "MongoDB"],
+  //   description:
+  //     "A task management application that allows users to create, organize, and track tasks efficiently with a simple and responsive interface.",
+  //   contributions: [
+  //     "Implemented task CRUD operations with backend APIs",
+  //     "Built responsive UI for task tracking and management",
+  //   ],
+  //   links: {
+  //     github: "https://github.com/ShathuryaParamanathan/CodeAlpha_ToDoList",
+  //     demo: "",
+  //   },
+  // },
+
 ];
 
 export default projects;
