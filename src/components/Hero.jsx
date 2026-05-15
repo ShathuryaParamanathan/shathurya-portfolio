@@ -203,7 +203,7 @@ export default function Hero() {
               </a> */}
             </div>
 
-            <div data-hero-reveal className="mt-10 grid grid-cols-3 gap-3 max-w-xl">
+            <div data-hero-reveal className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl">
               <div className="card p-4">
                 <div className="text-2xl font-extrabold text-brand-500">06</div>
                 <div className="muted text-sm">Months internship</div>

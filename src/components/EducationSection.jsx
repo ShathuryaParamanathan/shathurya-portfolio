@@ -30,10 +30,10 @@ export default function EducationSection() {
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {profile.education.map((item) => (
             <div key={item.title} data-reveal className="card p-6">
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col sm:flex-row items-start gap-6">
                 {/* Logo space */}
-                <div className="shrink-0">
-                  <div className="h-40 w-36 rounded-lg bg-ink-800 border border-white/10 flex items-center justify-center overflow-hidden ">
+                <div className="shrink-0 w-full sm:w-auto flex justify-center sm:block">
+                  <div className="h-32 w-32 sm:h-40 sm:w-36 rounded-lg bg-ink-800 border border-white/10 flex items-center justify-center overflow-hidden">
                     {item.logo ? (
                       <img
                         src={item.logo}
@@ -47,8 +47,8 @@ export default function EducationSection() {
                 </div>
 
                 {/* Text content */}
-                <div className="flex-1">
-                  <div className="flex items-start justify-between gap-4 ">
+                <div className="flex-1 w-full">
+                  <div className="flex flex-col sm:flex-row items-start justify-between gap-4">
                     <div>
                       <div className="text-lg font-bold">{item.title}</div>
                       <div className="muted">{item.org}</div>
@@ -61,7 +61,7 @@ export default function EducationSection() {
 
                   <ul className="mt-4 space-y-2">
                     {item.highlights.map((h) => (
-                      <li key={h} className="muted">
+                      <li key={h} className="muted text-sm leading-relaxed">
                         <span className="text-brand-500">•</span> {h}
                       </li>
                     ))}

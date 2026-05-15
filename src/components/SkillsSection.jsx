@@ -15,11 +15,11 @@ function SkillGroup({ title, items, icon }) {
         <div className="h-9 w-9 rounded-xl bg-brand-500/10 border border-brand-500/20" />
       </div>
 
-      <div className="mt-5 grid grid-cols-2 gap-2">
+      <div className="mt-5 grid grid-cols-1 xs:grid-cols-2 gap-2">
         {items?.map((x) => (
           <div
             key={x}
-            className="px-3 py-2 rounded-lg bg-ink-800 border border-white/5 text-sm text-white/80 hover:border-brand-500/30 transition"
+            className="px-3 py-2 rounded-lg bg-ink-800 border border-white/5 text-xs sm:text-sm text-white/80 hover:border-brand-500/30 transition break-words"
           >
             {x}
           </div>

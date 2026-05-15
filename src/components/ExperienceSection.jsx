@@ -31,33 +31,36 @@ export default function ExperienceSection() {
           {/* vertical line */}
           <div className="absolute left-4 top-0 h-full w-px bg-white/10" />
 
-          <div className="space-y-10">
+          <div className="space-y-12">
             {profile.workExperience?.map((x) => (
               <div
                 key={`${x.title}-${x.period}`}
                 data-reveal
-                className="relative pl-16"
+                className="relative pl-10 md:pl-16"
               >
                 {/* dot */}
-                <div className="absolute left-4 top-14 -translate-x-1/2 h-8 w-8 rounded-full bg-brand-500/15 border border-brand-500/30 flex items-center justify-center">
+                <div className="absolute left-4 top-1 sm:top-1/2 sm:-translate-y-1/2 -translate-x-1/2 h-8 w-8 rounded-full bg-brand-500/15 border border-brand-500/30 flex items-center justify-center z-10">
                   <div className="h-3 w-3 rounded-full bg-brand-500" />
                 </div>
 
-                {/* date (next to line, outside card) */}
-                <div className="absolute left-10 top-16 text-xs text-white/60 whitespace-nowrap">
-                  {x.period}
-                </div>
-
-                {/* card */}
-                <div className="card p-6 ml-40 max-w-3xl">
-                  <div>
-                    <div className="font-semibold">{x.title}</div>
-                    <div className="mt-1 muted text-sm">{x.org}</div>
+                {/* content grid */}
+                <div className="grid md:grid-cols-[140px_1fr] gap-4 items-start">
+                  {/* date */}
+                  <div className="text-sm font-semibold text-brand-500/80 md:text-white/60 md:pt-6">
+                    {x.period}
                   </div>
 
-                  <p className="mt-3 muted text-sm leading-relaxed">
-                    {x.description}
-                  </p>
+                  {/* card */}
+                  <div className="card p-6">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                      <div className="font-bold text-lg">{x.title}</div>
+                      <div className="chip text-[10px] sm:text-xs border-brand-500/20 bg-brand-500/5">{x.org}</div>
+                    </div>
+
+                    <p className="mt-4 muted text-sm leading-relaxed">
+                      {x.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
