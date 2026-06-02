@@ -9,7 +9,7 @@ import {
 import { gsap } from "gsap";
 
 function getProfileSrc() {
-  return "/profile_casual.png";
+  return "/me/profile_sample.png";
 }
 
 export default function AboutSection() {
@@ -74,7 +74,7 @@ export default function AboutSection() {
               e.currentTarget.src = "/profile.jpg";
             }}
             alt="Shathurya Paramanathan"
-            className="h-[360px] w-full object-cover sm:h-[440px] rounded-xl"
+            className="h-[400px] w-full object-cover sm:h-[480px] rounded-xl"
             loading="eager"
             decoding="async"
           />

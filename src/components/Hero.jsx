@@ -6,7 +6,7 @@ import { profile } from "../data/profile";
 
 function getProfileSrc() {
   // User said they'll add PNG; keep jpg fallback for current repo state.
-  return "/me/sp5.png";
+  return "/me/profile.jpg";
 }
 
 export default function Hero() {

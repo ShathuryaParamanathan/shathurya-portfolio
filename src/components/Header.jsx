@@ -74,7 +74,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <a
             className="btn-primary hidden sm:inline-flex"
-            href="/Shathurya_Parmanathan_SE_CV.pdf"
+            href="/ShathuryaP_SE.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
