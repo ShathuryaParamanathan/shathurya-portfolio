@@ -9,7 +9,7 @@ import {
 import { gsap } from "gsap";
 
 function getProfileSrc() {
-  return "/me/profile_sample.png";
+  return "/me/official_side.jpg";
 }
 
 export default function AboutSection() {
