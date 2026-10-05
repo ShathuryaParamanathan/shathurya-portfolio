@@ -67,7 +67,7 @@ export default function AboutSection() {
       <div className="mx-auto max-w-6xl container-px grid lg:grid-cols-12 gap-10 items-center">
         
         {/* Image */}
-        <div className="lg:col-span-5" data-reveal>
+        {/* <div className="lg:col-span-5" data-reveal>
           <img
             src={profileSrc}
             onError={(e) => {
@@ -78,7 +78,7 @@ export default function AboutSection() {
             loading="eager"
             decoding="async"
           />
-        </div>
+        </div> */}
 
         {/* Content */}
         <div className="lg:col-span-7">

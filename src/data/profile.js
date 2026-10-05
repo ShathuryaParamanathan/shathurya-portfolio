@@ -2,87 +2,181 @@ export const profile = {
   name: "Shathurya Paramanathan",
   image: "/profileTag.jpg",
   location: "Jaffna, Sri Lanka",
-  role: "Software Engineer |  IT Undergraduate",
+
+  role:
+    "Software Engineer | Full-Stack Developer | AI Engineer",
+
   intro:
-    "Curious developer driven by problem solving, continuous learning, and meaningful innovation.",
+    "Final-year Information Technology undergraduate focused on building production-ready full-stack applications, AI-powered solutions, and reliable software systems that solve real-world problems.",
+
   phone: "+94 769481183",
+
   links: {
     github: "https://github.com/ShathuryaParamanathan",
-    linkedin: "http://www.linkedin.com/in/shathurya-paramanathan-5a3048243",
+    linkedin:
+      "https://www.linkedin.com/in/shathurya-paramanathan-5a3048243",
     email: "mailto:shathuparam27@gmail.com",
   },
+
   about:
-    "I see software as a puzzle waiting to be understood and refined. I enjoy exploring how components connect, how data flows through systems, and how behavior emerges beneath the surface. This curiosity naturally leads me to experiment, build small prototypes, and refine my understanding through hands-on learning.",
-  interests: ["Photography", "Reading", "Chess"],
+    "I am a final-year Information Technology undergraduate at the University of Moratuwa with hands-on experience in full-stack development, software engineering, machine learning, and AI-powered applications. During my internship at COGNTIX, I contributed to software projects across MedTech, HR-Tech, and Telecom domains, working across the software development lifecycle from requirements analysis and implementation to testing, deployment, and production support. I enjoy building scalable applications, designing reliable APIs and data models, integrating AI into practical workflows, and using modern development tools to turn business requirements into production-ready solutions.",
+
+  interests: [
+    "Artificial Intelligence",
+    "Agentic AI",
+    "Software Engineering",
+    "Cloud & DevOps",
+    "System Design",
+    "Automation",
+  ],
 
   education: [
     {
       title: "B.Sc. (Hons) in Information Technology",
-      org: "University of Moratuwa, Colombo, Sri Lanka",
+      org: "University of Moratuwa, Sri Lanka",
       period: "2022 – 2026",
       logo: "/logos/uom_logo.png",
-      highlights: ["L2S1 SGPA: 3.71", "L2S2 SGPA: 3.83 (Dean's List)"],
+      highlights: [
+        "L2S2 SGPA: 3.83 (Dean's List)",
+        "L2S1 SGPA: 3.71",
+      ],
     },
+
     {
-      title: "G.C.E A/L: Physical Science Stream",
-      org: "Nelliady Central College, Jaffna, Sri Lanka",
+      title: "G.C.E. Advanced Level – Physical Science Stream",
+      org: "Nelliady Central College, Jaffna",
       period: "2020",
       logo: "/logos/ncc.png",
-      highlights: ["2A B", "Z-Score: 1.7680"],
+      highlights: [
+        "Combined Mathematics - A",
+        "Chemistry - A",
+        "Physics - B",
+        "Z-Score: 1.7680",
+      ],
     },
   ],
+
   workExperience: [
     {
-      title: "COGNTIX",
-      org: "Nallur, Jaffna, Sri Lanka",
-      period: "Feb 2025 - July 2025",
+      title: "Software Engineer Intern",
+      org: "COGNTIX",
+      period: "Feb 2025 – Jul 2025",
       description:
-        "Worked on projects across Telecom, MediTech, and HR Tech domains. Delivered high-quality solutions within deadlines. Demonstrated proactive problem-solving and strong technical contributions.",
+        "Contributed to full-stack software development projects across MedTech, HR-Tech, and Telecom domains. Worked across the software development lifecycle including requirements analysis, API and feature development, testing, deployment, debugging, and production support.",
     },
   ],
 
   skills: {
-    programming: ["Python", "Java", "C", "JavaScript"],
-    web: [
+    programming: [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "C#",
+      "Java",
+      "C",
+    ],
+
+    frontend: [
       "React",
       "Next.js",
-      "Express.js",
       "HTML",
       "CSS",
       "Tailwind CSS",
       "Material UI",
     ],
-    databases: ["MongoDB", "MySQL"],
-    cloud: ["AWS (Basic)"],
+
+    backend: [
+      "Node.js",
+      "Express.js",
+      "ASP.NET Core",
+      "FastAPI",
+      "REST APIs",
+    ],
+
+    databases: [
+      "MongoDB",
+      "PostgreSQL",
+      "MySQL",
+      "SQL Server",
+    ],
+
+    ai_ml: [
+      "Machine Learning",
+      "Scikit-learn",
+      "XGBoost",
+      "Pandas",
+      "SHAP",
+      "OpenAI API",
+      "Agentic AI",
+      "AI-assisted Development",
+    ],
+
+    cloud_devops: [
+      "AWS",
+      "Docker",
+      "CI/CD",
+      "GitHub Actions",
+      "Render",
+    ],
+
     tools: [
       "Git",
-      "VS Code",
+      "GitHub",
       "Postman",
-      "Selenium",
-      "Cucumber",
-      "REST API Testing",
+      "VS Code",
+      "GitHub Copilot",
+      "Claude",
+      "ChatGPT",
     ],
-    languages: ["English", "Tamil"],
-  },
- leadership: [
-  { title: "Batch Representative (3rd Year)", period: "2024-2025" },
 
-  {
-    title: "Company Coordinator – CodeGen | FIT Future Career Fair",
-    period: "2024",
-  },
+    engineering: [
+      "Software Architecture",
+      "API Design",
+      "Data Modeling",
+      "Debugging",
+      "Testing",
+      "System Design",
+      "Production Deployment",
+    ],
 
-  { title: "Web Team Coordinator – TLA", period: "2025-2026" },
-
-  { title: "Crew Member – News Operations, MoraSpirit", period: "2022–2024" },
-
-  {
-    title: "oGV Member & Marketing/PR – AIESEC Colombo South",
-    period: "2023-2024",
+    languages: [
+      "English",
+      "Tamil",
+    ],
   },
 
-  { title: "School Prefect – Nelliady Central College", period: "2018-2020" },
-],
+  leadership: [
+    {
+      title: "Web Team Coordinator – TLA",
+      period: "2025 – Present",
+    },
+
+    {
+      title: "Batch Representative (3rd Year)",
+      period: "2024 – 2025",
+    },
+
+    {
+      title: "Company Coordinator – CodeGen | FIT Future Career Fair",
+      period: "2024",
+    },
+
+    {
+      title: "Crew Member – News Operations, MoraSpirit",
+      period: "2022 – 2024",
+    },
+
+    {
+      title: "oGV Member & Marketing/PR – AIESEC Colombo South",
+      period: "2023 – 2024",
+    },
+
+    {
+      title: "School Prefect – Nelliady Central College",
+      period: "2018 – 2020",
+    },
+  ],
+
   certifications: [
     "React Basics – Meta (Coursera)",
     "AWS S3 Basics – Meta (Coursera)",

@@ -159,7 +159,7 @@ export default function Hero() {
           <div className="lg:col-span-7 order-2 lg:order-1">
             <div data-hero-reveal className="chip w-fit">
               <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
-              <span className="uppercase tracking-[0.18em] text-white/80">Hey ! </span>
+              <span className="uppercase tracking-[0.18em] text-white/80">Hey ! Welcome to my portfolio </span>
             </div>
 
             <h1 data-hero-reveal className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
