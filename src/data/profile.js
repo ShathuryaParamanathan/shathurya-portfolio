@@ -10,6 +10,7 @@ export const profile = {
     "Curious developer driven by problem solving, continuous learning, and meaningful innovation.",
 
   phone: "+94 769481183",
+  jobStatus: " Seeking",
 
   links: {
     github: "https://github.com/ShathuryaParamanathan",
@@ -18,13 +19,13 @@ export const profile = {
     email: "mailto:shathuparam27@gmail.com",
     medium: "https://medium.com/@shathuparam27",
     hackerrank: "https://www.hackerrank.com/profile/Shathurya_HM",
-    
+
     
 
   },
 
   about:
-    "I am a final-year Information Technology undergraduate at the University of Moratuwa with hands-on experience in full-stack development, software engineering, machine learning, and AI-powered applications. During my internship at COGNTIX, I contributed to software projects across MedTech, HR-Tech, and Telecom domains, working across the software development lifecycle from requirements analysis and implementation to testing, deployment, and production support. I enjoy building scalable applications, designing reliable APIs and data models, integrating AI into practical workflows, and using modern development tools to turn business requirements into production-ready solutions.",
+  "Curiosity is where it begins — asking questions, exploring different perspectives, and finding meaning in how things come together. Every challenge brings something new to discover, every mistake becomes a lesson, and every experience adds another layer to the journey. Along the way, openness, consistency, meaningful connections, and a willingness to grow keep the journey moving forward.",
 
   interests: [
     "Artificial Intelligence",
@@ -43,7 +44,8 @@ export const profile = {
       logo: "/logos/uom_logo.png",
       highlights: [
         "L2S2 SGPA: 3.83 (Dean's List)",
-        "L2S1 SGPA: 3.71",
+        "CGPA: 3.37",
+        
       ],
     },
 

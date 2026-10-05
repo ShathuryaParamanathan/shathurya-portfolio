@@ -1,5 +1,10 @@
 import React, { useEffect, useMemo, useRef } from "react";
-import { FiArrowUpRight, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import {
+  FiArrowUpRight,
+  FiGithub,
+  FiLinkedin,
+  FiMail,
+} from "react-icons/fi";
 import { gsap } from "gsap";
 import { ensureGsap, prefersReducedMotion } from "../lib/motion";
 import { profile } from "../data/profile";
@@ -23,8 +28,28 @@ export default function Hero() {
 
       gsap
         .timeline({ defaults: { ease: "power3.out" } })
-        .to("[data-hero-reveal]", { autoAlpha: 1, y: 0, duration: 0.9, stagger: 0.12 }, 0)
-        .to("[data-hero-float]", { y: -10, duration: 2.6, yoyo: true, repeat: -1, ease: "sine.inOut", stagger: 0.2 }, 0.4);
+        .to(
+          "[data-hero-reveal]",
+          {
+            autoAlpha: 1,
+            y: 0,
+            duration: 0.9,
+            stagger: 0.12,
+          },
+          0
+        )
+        .to(
+          "[data-hero-float]",
+          {
+            y: -10,
+            duration: 2.6,
+            yoyo: true,
+            repeat: -1,
+            ease: "sine.inOut",
+            stagger: 0.2,
+          },
+          0.4
+        );
     }, rootRef);
 
     return () => ctx.revert();
@@ -33,7 +58,9 @@ export default function Hero() {
   return (
     <section id="home" ref={rootRef} className="relative overflow-hidden">
       <div className="absolute inset-0 bg-radial-ink" />
+
       <div className="absolute -top-24 -right-24 h-80 w-80 rounded-full bg-brand-500/10 blur-3xl" />
+
       <div className="absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-brand-500/10 blur-3xl" />
 
       {/* Decorative Vector Shapes */}
@@ -49,6 +76,7 @@ export default function Hero() {
         >
           <path d="M12 2L22 20H2L12 2Z" />
         </svg>
+
         {/* Square */}
         <svg
           data-hero-float
@@ -60,6 +88,7 @@ export default function Hero() {
         >
           <rect x="4" y="4" width="16" height="16" />
         </svg>
+
         {/* Circle */}
         <svg
           data-hero-float
@@ -71,6 +100,7 @@ export default function Hero() {
         >
           <circle cx="12" cy="12" r="10" />
         </svg>
+
         {/* Triangle */}
         <svg
           data-hero-float
@@ -82,6 +112,7 @@ export default function Hero() {
         >
           <path d="M12 2L22 20H2L12 2Z" />
         </svg>
+
         {/* Square */}
         <svg
           data-hero-float
@@ -93,6 +124,7 @@ export default function Hero() {
         >
           <rect x="4" y="4" width="16" height="16" />
         </svg>
+
         {/* Circle */}
         <svg
           data-hero-float
@@ -104,6 +136,7 @@ export default function Hero() {
         >
           <circle cx="12" cy="12" r="10" />
         </svg>
+
         {/* Triangle */}
         <svg
           data-hero-float
@@ -117,14 +150,21 @@ export default function Hero() {
         </svg>
       </div>
 
-      <div className="relative mx-auto max-w-6xl container-px pt-24 pb-16 sm:pt-28 sm:pb-24">
+      <div className="relative mx-auto max-w-6xl container-px pt-8 pb-16 sm:pt-8 sm:pb-24">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-12 items-center">
-          {/* Image first on mobile, content second */}
+
+          {/* Image */}
           <div className="lg:col-span-5 order-1 lg:order-2">
             <div className="relative">
-              <div data-hero-float className="absolute -inset-3 rounded-[2rem] border border-white/10 bg-white/5 blur-sm" />
+
+              <div
+                data-hero-float
+                className="absolute -inset-3 rounded-[2rem] border border-white/10 bg-white/5 blur-sm"
+              />
+
               <div className="relative card p-4 sm:p-5">
                 <div className="relative overflow-hidden rounded-[1.5rem] bg-ink-850">
+
                   <img
                     src={profileSrc}
                     onError={(e) => {
@@ -135,92 +175,186 @@ export default function Hero() {
                     loading="eager"
                     decoding="async"
                   />
+
                   <div className="absolute inset-0 bg-gradient-to-t from-ink-950/70 via-ink-950/10 to-transparent" />
                 </div>
-
-                {/* <div className="mt-5 grid grid-cols-2 gap-3">
-                  <div className="rounded-xl border border-white/10 bg-white/5 p-4">
-                    <div className="text-sm font-semibold">Focus</div>
-                    <div className="muted text-sm">Full-stack + clean UI</div>
-                  </div>
-                  <div className="rounded-xl border border-white/10 bg-white/5 p-4">
-                    <div className="text-sm font-semibold">Currently</div>
-                    <div className="muted text-sm">Learning & shipping</div>
-                  </div>
-                </div> */}
               </div>
 
-              <div data-hero-float className="pointer-events-none absolute -right-3 top-10 hidden h-20 w-20 rounded-2xl border border-white/10 bg-brand-500/10 sm:block" />
-              <div data-hero-float className="pointer-events-none absolute -left-4 bottom-10 hidden h-14 w-14 rounded-full border border-white/10 bg-white/5 sm:block" />
+              <div
+                data-hero-float
+                className="pointer-events-none absolute -right-3 top-10 hidden h-20 w-20 rounded-2xl border border-white/10 bg-brand-500/10 sm:block"
+              />
+
+              <div
+                data-hero-float
+                className="pointer-events-none absolute -left-4 bottom-10 hidden h-14 w-14 rounded-full border border-white/10 bg-white/5 sm:block"
+              />
             </div>
           </div>
 
-          {/* Content second on mobile, first on desktop */}
+          {/* Content */}
           <div className="lg:col-span-7 order-2 lg:order-1">
+
             <div data-hero-reveal className="chip w-fit">
               <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
-              <span className="uppercase tracking-[0.18em] text-white/80">Hey ! Welcome to my portfolio </span>
+
+              <span className="uppercase tracking-[0.18em] text-white/80">
+                Hey! Welcome to my portfolio
+              </span>
             </div>
 
-            <h1 data-hero-reveal className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+            <h1
+              data-hero-reveal
+              className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight"
+            >
               <span className="block text-white">I’m</span>
-              <span className="block text-brand-500">{profile.name}</span>
+
+              <span className="block text-brand-500">
+                {profile.name}
+              </span>
             </h1>
 
-            <p data-hero-reveal className="mt-4 text-base sm:text-lg text-white/75 max-w-2xl leading-relaxed">
-              <span className="font-semibold text-white">{profile.role}</span>
-              <span className="block mt-2">{profile.intro}</span>
+            <p
+              data-hero-reveal
+              className="mt-4 text-base sm:text-lg text-white/75 max-w-2xl leading-relaxed"
+            >
+              <span className="font-semibold text-white">
+                {profile.role}
+              </span>
+
+              <span className="block mt-2">
+                {profile.intro}
+              </span>
             </p>
 
-            <div data-hero-reveal className="mt-4 text-sm text-white/60">
-              <a href={profile.links.email} className="hover:text-brand-500 transition-colors">{profile.links.email.replace('mailto:', '')}</a>
+            <div
+              data-hero-reveal
+              className="mt-4 text-sm text-white/60"
+            >
+              <a
+                href={profile.links.email}
+                className="hover:text-brand-500 transition-colors"
+              >
+                {profile.links.email.replace("mailto:", "")}
+              </a>
+
               {profile.phone && (
                 <>
                   <span className="mx-2">|</span>
-                  <a href={`tel:${profile.phone.replace(/\s/g, '')}`} className="hover:text-brand-500 transition-colors">{profile.phone}</a>
+
+                  <a
+                    href={`tel:${profile.phone.replace(/\s/g, "")}`}
+                    className="hover:text-brand-500 transition-colors"
+                  >
+                    {profile.phone}
+                  </a>
                 </>
               )}
+
               {profile.location && (
                 <>
                   <span className="mx-2">|</span>
-                  <a className="hover:text-brand-500 transition-colors cursor-default">{profile.location}</a>
+
+                  <span className="hover:text-brand-500 transition-colors">
+                    {profile.location}
+                  </span>
                 </>
               )}
             </div>
 
-            <div data-hero-reveal className="mt-7 flex flex-wrap gap-3">
-              <a className="btn-primary" href="#projects">
-                View work <FiArrowUpRight />
-              </a>
-              <a className="btn-ghost" href={profile.links.github} target="_blank" rel="noreferrer">
+            {/* Social / Action Buttons */}
+            <div
+              data-hero-reveal
+              className="mt-7 flex flex-wrap gap-3"
+            >
+            
+
+              <a
+                className="btn-ghost"
+                href={profile.links.github}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FiGithub /> GitHub
               </a>
-              <a className="btn-ghost" href={profile.links.linkedin} target="_blank" rel="noreferrer">
+
+              <a
+                className="btn-ghost"
+                href={profile.links.linkedin}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FiLinkedin /> LinkedIn
               </a>
-              {/* <a className="btn-ghost" href={profile.links.email}>
-                <FiMail /> Email
-              </a> */}
+
+              {profile.links.medium && (
+                <a
+                  className="btn-ghost"
+                  href={profile.links.medium}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="font-bold text-base">M</span>
+                  Medium
+                </a>
+              )}
+
+              {profile.links.hackerrank && (
+                <a
+                  className="btn-ghost"
+                  href={profile.links.hackerrank}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="font-bold text-base">H</span>
+                  HackerRank
+                </a>
+              )}
+
+                <a className="btn-primary" href="#projects">
+                View work <FiArrowUpRight />
+              </a>
             </div>
 
-            <div data-hero-reveal className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl">
+            {/* Highlights */}
+            <div
+              data-hero-reveal
+              className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl"
+            >
               <div className="card p-4">
-                <div className="text-2xl font-extrabold text-brand-500">06</div>
-                <div className="muted text-sm">Months internship</div>
+                <div className="text-2xl font-extrabold text-brand-500">
+                  06
+                </div>
+
+                <div className="muted text-sm">
+                  Months internship
+                </div>
               </div>
+
               <div className="card p-4">
-                <div className="text-2xl font-extrabold text-brand-500">10+</div>
-                <div className="muted text-sm">Projects built</div>
+                <div className="text-2xl font-extrabold text-brand-500">
+                  10+
+                </div>
+
+                <div className="muted text-sm">
+                  Projects built
+                </div>
               </div>
+
               <div className="card p-4">
-                <div className="text-2xl font-extrabold text-brand-500">4th</div>
-                <div className="muted text-sm">Year student</div>
+                <div className="text-2xl font-extrabold text-brand-500">
+                  Job Status
+                </div>
+
+                <div className="muted text-sm">
+                  {profile.jobStatus || "Actively seeking opportunities"}
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
     </section>
   );
 }
-
