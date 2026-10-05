@@ -184,11 +184,14 @@ export const profile = {
     },
   ],
 
-  certifications: [
-    "React Basics – Meta (Coursera)",
-    "AWS S3 Basics – Meta (Coursera)",
-    "Code Rush 2023 – INTECS UoM",
-    "Idealize'24",
-    "HackMoral 6.0",
-  ],
+certifications: [
+  "Fundamentals of Agentic AI – LinkedIn Learning (2026)",
+  "Prompt Engineering with ChatGPT – LinkedIn (2026)",
+  "Artificial Intelligence – NoviTech R&D Pvt Ltd (2024)",
+  "Python (Basics) – HackerRank (2024)",
+  "AWS S3 Basics – Coursera (2024)",
+  "React Basics – Meta (2024)",
+  "Introduction to Front-End Development – Meta (2023)",
+  "Data Analytics – NoviTech R&D Pvt Ltd (2024)",
+],
 };
