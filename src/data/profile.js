@@ -4,10 +4,10 @@ export const profile = {
   location: "Jaffna, Sri Lanka",
 
   role:
-    "Software Engineer | Full-Stack Developer | AI Engineer",
+    "Software Engineer | Full-Stack Developer  | Forward Deployed Engineer",
 
   intro:
-    "Final-year Information Technology undergraduate focused on building production-ready full-stack applications, AI-powered solutions, and reliable software systems that solve real-world problems.",
+    "Curious developer driven by problem solving, continuous learning, and meaningful innovation.",
 
   phone: "+94 769481183",
 
@@ -16,6 +16,11 @@ export const profile = {
     linkedin:
       "https://www.linkedin.com/in/shathurya-paramanathan-5a3048243",
     email: "mailto:shathuparam27@gmail.com",
+    medium: "https://medium.com/@shathuparam27",
+    hackerrank: "https://www.hackerrank.com/profile/Shathurya_HM",
+    
+    
+
   },
 
   about:
